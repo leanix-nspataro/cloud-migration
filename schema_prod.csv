@@ -1,0 +1,75 @@
+Technical Name Question,Answers,Technical Name,Rehost,Rearchitect,Rebuild,Replace,Retain,Retire,Section,in/out
+CMLifecycle,In 2022,In2022,0,-2,-2,-2,0,2,Business,in
+CMLifecycle,In 2023,In2023,2,1,0,2,0,0,,in
+CMLifecycle,In 2024 or later,In2024Later,1,2,2,2,-2,-2,,in
+CMUpToDate,Yes,Yes,2,0,0,0,2,-2,Business,in
+CMUpToDate,No,No,0,2,2,2,-2,2,,in
+CMBusinessNeed,no business need to migrate,NoNeed,2,0,0,0,2,2,Business,in
+CMBusinessNeed,need identified and with weak identified business impact,YesWeak,0,1,1,1,-1,-1,,in
+CMBusinessNeed,need identified with strong identified business impact,YesStrong,-1,2,2,2,-2,-2,,in
+rangeOfUsers,<10,lt10,2,0,-1,0,2,2,Business,in
+rangeOfUsers,<100,lt100,2,1,1,1,1,2,,in
+rangeOfUsers,<500,lt500,2,1,1,1,0,1,,in
+rangeOfUsers,<5000,lt1000,1,2,2,1,0,1,,in
+rangeOfUsers,>=5000,lt5000,1,2,2,1,0,0,,in
+CMBusinessBenefit,Small benefit,LittleBenefit,1,0,0,0,2,2,Business,in
+CMBusinessBenefit,Medium benefit,MediumBenefit,1,2,2,1,0,0,,in
+CMBusinessBenefit,Large Benefit,LargeBenefit,0,2,2,2,-2,-2,,in
+businessCriticality,Administrative service,administrationService,0,0,0,0,0,1,Business,in
+businessCriticality,Business operational,businessOperational,0,0,0,0,0,1,,in
+businessCriticality,Business critical,businessCritical,1,1,1,0,0,0,,in
+businessCriticality,Mission critical,missionCritical,1,2,1,0,0,-1,,in
+CMTimeCritical,Not time critical,NotCritical,0,2,2,1,0,0,Business,in
+CMTimeCritical,Medium time critical,MediumCritical,1,2,1,1,0,0,,in
+CMTimeCritical,Highly time critical,HighCritical,2,1,0,2,0,0,,in
+functionalSuitability,Unreasonable,unreasonable,-2,2,2,2,-2,2,Business,in
+functionalSuitability,Insufficient,insufficient,-1,1,1,1,-1,1,,in
+functionalSuitability,Appropriate,appropriate,1,1,1,1,1,0,,in
+functionalSuitability,Perfect,perfect,2,1,0,1,2,0,,in
+CRT_CloudVersion,Yes - same vendor,samevendor,0,0,0,2,0,0,Effort,in
+CRT_CloudVersion,Yes - different vendor,differentvendor,0,0,0,2,0,0,,in
+CRT_CloudVersion,No cloud version available,notavailable,2,2,2,-2,2,2,,in
+CRT_CodeAccess,Yes it is accesible and could be adjusted,AccessibleAdjust,-1,2,2,0,-2,0,Effort,in
+CRT_CodeAccess,Yes it is accesible but no recourses to adjust,AccessibleNotAdjust,1,0,0,2,1,0,,in
+CRT_CodeAccess,Not accesible,NotAccessible,2,-2,-2,2,2,0,,in
+CMCloudReadyOrganization,Low,Low,2,-2,-2,2,2,0,Organizational Readiness,in
+CMCloudReadyOrganization,Medium,Medium,1,1,1,0,1,0,,in
+CMCloudReadyOrganization,High,High,0,2,2,0,0,0,,in
+CRT_RunningLicense,Ends in 2022,YesShortTime,-2,-1,-2,1,2,2,Effort,in
+CRT_RunningLicense,Ends in 2023,YesMediumTime,1,1,1,1,0,1,,in
+CRT_RunningLicense,Ends 2024 or later,YesLongTime,1,2,2,1,-2,0,,in
+CRT_RunningLicense,No running contract,NotAvailable,0,0,0,0,2,0,,in
+FIAR_API_Documentation,Yes,Available,1,1,1,0,2,0,FITA,in
+FIAR_API_Documentation,No,NotAvailable,-1,-1,-1,0,-1,0,,in
+FIAR_API_CRUD,Yes,Able,-1,2,2,1,0,1,FITA,in
+FIAR_API_CRUD,No,NotAble,1,-2,-2,-1,0,-1,,in
+FIAR_API_CoreFunction,Fully,Able,0,2,2,-2,1,-1,FITA,in
+FIAR_API_CoreFunction,Partially,NotAble,0,1,1,0,1,-1,,in
+FIAR_API_CoreFunction,No,Partly,0,0,0,1,0,0,,in
+FIAR_Cloud_ScaleUp,Yes,Able,2,0,0,0,2,0,FITA,in
+FIAR_Cloud_ScaleUp,No,NotAble,0,2,2,2,0,2,,in
+CMResourceAvailability,Low availability,LowAvailability,2,-2,-2,2,2,0,Organizational Readiness,in
+CMResourceAvailability,Medium availability,MediumAvailability,1,1,1,1,0,0,,in
+CMResourceAvailability,High availability,HighAvailability,0,2,2,1,-2,0,,in
+CRT_Workload,Low workload,VerlyLow,1,0,0,0,1,0,Effort,in
+CRT_Workload,Medium workload,Medium,0,1,2,1,-1,0,,in
+CRT_Workload,High workload,VeryHigh,-1,2,2,2,-2,0,,in
+CMMaintenanceEffort,Low maintenance effort,LowEffort,2,1,1,1,0,0,Effort,in
+CMMaintenanceEffort,Medium maintenance effort,MediumEffort,0,1,2,2,-1,1,,in
+CMMaintenanceEffort,High maintenance effort,HighEffort,-2,2,2,2,-2,1,,in
+CMChangeCloudNative,No chance,NoChance,2,-2,-2,2,2,0,Effort,in
+CMChangeCloudNative,Rather unlikely,Unlikely,1,-1,-2,2,1,0,,in
+CMChangeCloudNative,Medium likely,MediumLikely,0,1,2,1,-1,0,,in
+CMChangeCloudNative,Very likely,HighLikely,-2,1,2,0,-2,0,,in
+CRT_ComplexTechnical,Low complexity,NotVeryComplex,2,1,1,2,0,0,Effort,in
+CRT_ComplexTechnical,Medium complexity,MediumComplex,0,1,1,2,-1,0,,in
+CRT_ComplexTechnical,High complexity,VeryComplex,-2,2,2,2,-2,0,,in
+CMInterfaces,Low complexity,LowComplexity,2,1,1,2,0,0,Risk,in
+CMInterfaces,Medium complexity,MediumComplexity,0,1,1,2,-1,0,,in
+CMInterfaces,High complexity,HighComplexity,-2,2,2,2,-2,0,,in
+technicalSuitability,Inappropriate,inappropriate,-2,2,2,2,-2,2,Effort,in
+technicalSuitability,Unreasonable,unreasonable,-1,1,2,1,-1,1,,in
+technicalSuitability,Adequate,adequate,0,1,1,1,0,0,,in
+technicalSuitability,Fully Appropriate,fullyAppropriate,2,-1,-1,-1,0,-2,,in
+CMSecurityRisks,Yes,Yes,-2,1,2,2,-2,1,Risk,in
+CMSecurityRisks,No,No,1,1,1,1,0,0,,in
