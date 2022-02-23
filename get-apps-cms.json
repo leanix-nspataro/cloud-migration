@@ -1,0 +1,384 @@
+{
+	"scope": {
+		"ids": [],
+		"facetFilters": [
+			{
+				"keys": [
+					"Application"
+				],
+				"facetKey": "FactSheetTypes",
+				"operator": "OR"
+			},
+			{
+				"keys": [
+					"c3b88eae-2572-44dd-b93c-91a63a695984"
+				],
+				"facetKey": "6f1036cd-91b7-429e-86a7-1cc8239a78d2",
+				"operator": "OR"
+			}
+		]
+	},
+	"processors": [
+		{
+			"processorType": "outboundFactSheet",
+			"processorName": "get-apps-cms-data",
+			"processorDescription": "",
+			"enabled": true,
+			"scope": {
+				"ids": [],
+				"facetFilters": [
+					{
+						"keys": [
+							"Application"
+						],
+						"facetKey": "FactSheetTypes",
+						"operator": "OR"
+					}
+				]
+			},
+			"fields": [
+				"technicalSuitability",
+				"CMBusinessNeed",
+				"CMLifecycle",
+				"CMInterfaces",
+				"FIAR_API_CoreFunction",
+				"CRT_ComplexTechnical",
+				"FIAR_API_Documentation",
+				"CRT_CodeAccess",
+				"CMCloudReadyOrganization",
+				"name",
+				"CMBusinessBenefit",
+				"CMUpToDate",
+				"FIAR_API_CRUD",
+				"businessCriticality",
+				"FIAR_Cloud_ScaleUp",
+				"CRT_Workload",
+				"CMChangeCloudNative",
+				"CMResourceAvailability",
+				"rangeOfUsers",
+				"CMMaintenanceEffort",
+				"CMTimeCritical",
+				"FIAR_Cloud_ScaleDown",
+				"type",
+				"functionalSuitability",
+				"CMSecurityRisks",
+				"id",
+				"CRT_RunningLicense",
+				"CRT_CloudVersion"
+			],
+			"tags": {
+				"groups": [
+					"Cloud Migration Assessment"
+				]
+			},
+			"output": [
+				{
+					"key": {
+						"expr": "content.id"
+					},
+					"mode": "selectFirst",
+					"values": [
+						{
+							"expr": "${lx.factsheet.id}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "content.type"
+					},
+					"mode": "selectFirst",
+					"values": [
+						{
+							"expr": "${lx.factsheet.type}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "name"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.name}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMBusinessNeed"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMBusinessNeed}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "FIAR_Cloud_ScaleUp"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.FIAR_Cloud_ScaleUp}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CRT_Workload"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CRT_Workload}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "technicalSuitability"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.technicalSuitability}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMLifecycle"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMLifecycle}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMInterfaces"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMInterfaces}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "FIAR_API_CoreFunction"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.FIAR_API_CoreFunction}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CRT_ComplexTechnical"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CRT_ComplexTechnical}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "FIAR_API_Documentation"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.FIAR_API_Documentation}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CRT_CodeAccess"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CRT_CodeAccess}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMCloudReadyOrganization"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMCloudReadyOrganization}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMBusinessBenefit"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMBusinessBenefit}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMUpToDate"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMUpToDate}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "FIAR_API_CRUD"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.FIAR_API_CRUD}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "businessCriticality"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.businessCriticality}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMChangeCloudNative"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMChangeCloudNative}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMResourceAvailability"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMResourceAvailability}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "rangeOfUsers"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.rangeOfUsers}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMMaintenanceEffort"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMMaintenanceEffort}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMTimeCritical"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMTimeCritical}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "FIAR_Cloud_ScaleDown"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.FIAR_Cloud_ScaleDown}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "functionalSuitability"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.functionalSuitability}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMSecurityRisks"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CMSecurityRisks}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CRT_RunningLicense"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CRT_RunningLicense}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CRT_CloudVersion"
+					},
+					"values": [
+						{
+							"expr": "${lx.factsheet.CRT_CloudVersion}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "tags"
+					},
+					"mode": "list",
+					"values": [
+						{
+							"forEach": {
+								"elementOf": "${lx.tags}",
+								"filter": "${true}"
+							},
+							"map": [
+								{
+									"key": "tagGroup",
+									"value": "${integration.output.valueOfForEach.tagGroup.name}"
+								},
+								{
+									"key": "tagName",
+									"value": "${integration.output.valueOfForEach.name}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
