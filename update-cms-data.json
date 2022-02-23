@@ -1,0 +1,94 @@
+{
+	"processors": [
+		{
+			"processorType": "inboundFactSheet",
+			"processorName": "update-cms-data",
+			"processorDescription": "Updates cloud migration strategy data with 6R decision and scores.",
+			"type": "Application",
+			"filter": {
+				"exactType": "Application"
+			},
+			"identifier": {
+				"internal": "${content.id}"
+			},
+			"run": 0,
+			"updates": [
+				{
+					"key": {
+						"expr": "CMResultRecommendation"
+					},
+					"values": [
+						{
+							"expr": "${data.CMResultRecommendation}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMResultRearchitect"
+					},
+					"values": [
+						{
+							"expr": "${data.CMResultRearchitect}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMResultRebuild"
+					},
+					"values": [
+						{
+							"expr": "${data.CMResultRebuild}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMResultRehost"
+					},
+					"values": [
+						{
+							"expr": "${data.CMResultRehost}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMResultReplace"
+					},
+					"values": [
+						{
+							"expr": "${data.CMResultReplace}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMResultRetain"
+					},
+					"values": [
+						{
+							"expr": "${data.CMResultRetain}"
+						}
+					]
+				},
+				{
+					"key": {
+						"expr": "CMResultRetire"
+					},
+					"values": [
+						{
+							"expr": "${data.CMResultRetire}"
+						}
+					]
+				}
+			],
+			"enabled": true,
+			"logLevel": "debug"
+		}
+	],
+	"credentials": {
+		"apiToken": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	}
+}
